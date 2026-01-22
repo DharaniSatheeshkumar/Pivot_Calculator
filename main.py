@@ -35,9 +35,10 @@ if H > 0 and L > 0 and C > 0:
     with col2:
         st.metric("S2", f"{S2:.2f}")
     with col3:
+        st.metric("R3", f"{R3:.2f}")
         st.metric("S3", f"{S3:.2f}")
     
-    st.metric("R3", f"{R3:.2f}")
+    
 
 S3 = L - 2*(H-Pivot)
 print("Support 3: {:.2f}".format(S3))
